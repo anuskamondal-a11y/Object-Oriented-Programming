@@ -1,0 +1,13 @@
+class Doctor:
+    def __init__(self, name, speciality):
+        self.name=name
+        self.speciality=speciality
+    def treating(self):
+        print(self.name, "is treating patients on", self.speciality)
+    def prescribing(self):
+        print(self.name, "is prescribing medicines related to", self.speciality)
+
+Doc1=Doctor("Sameer", "Cardiologist")
+Doc1.treating()
+Doc2=Doctor("Seema", "Oncologist")
+Doc2.prescribing()
