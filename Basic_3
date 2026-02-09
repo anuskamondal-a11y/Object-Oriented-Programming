@@ -1,0 +1,21 @@
+#DATA ENCAPSULATION
+#creating bank account object 
+class BankAccount:
+    def __init__(self, balance):
+        self._balance=balance
+    def deposit(self, amount):
+        self._balance+=amount
+    def withdraw(self, amount):
+        self._balance-=amount
+#calculating interest 
+    def interest(self, rate):
+        self._balance+=self._balance*(rate/100)
+    def get_balance(self):
+        return self._balance
+        # print("Balance", self._balance)
+acc=BankAccount(100000)
+acc.deposit(200)
+acc.withdraw(100)
+print("Balance before interest:", acc.get_balance())
+acc.interest(10)
+print("Balance after interest:", acc.get_balance())
