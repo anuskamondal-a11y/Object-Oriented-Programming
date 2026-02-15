@@ -1,1 +1,15 @@
-
+#POLYMORPHISM
+class Animal:
+    def speak(self):
+        print("Animal makes sound.")
+class Dog(Animal):
+    def speak(self):
+        print("The dog barks.")
+class Cat(Animal):
+    def speak(self):
+        print("The cat meows.")
+animals=[Dog(), Cat(), Animal()]
+for a in animals:
+    a.speak()
+cat1=Cat()
+cat1.speak()
